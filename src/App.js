@@ -6,15 +6,15 @@ import Attendance from "./components/mySpace/Attendance";
 function App() {
   return (
     <div className="w-full">
-      <div className="flex">
+      <div className="flex flex-col md:flex-row">
         <SideBar />
-        <div className="space-y-10 w-full p-10">
-          <div className="mx-auto ">
+        <div className="md:w-3/4 lg:w-4/5 p-4 md:p-10">
+          <div className="mx-auto">
             <Header />
           </div>
           <div className="space-y-5">
             <Attendance />
-            <Logs/>
+            <Logs />
           </div>
         </div>
       </div>
